@@ -5,9 +5,25 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+h1, h2, h3, h4 {
+  text-align: center;
+  color: hsl(0, 0%, 80%);
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit; /* no underline */
+}
+
+#page-content {
+  background: hsl(213, 13%, 18%);
+  height: 100%;
 }
