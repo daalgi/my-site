@@ -34,7 +34,7 @@ const projects = [
     },
     {
         title: "Engineering Toolbag",
-        description: "Collection of apps to solve some simple yet tedious tasks of engineers",
+        description: "Apps to help with some simple, but yet sometimes tedious, tasks for engineers",
         web: "https://engineertoolbag.web.app/",
         tags: [
             "web-app",
@@ -67,8 +67,7 @@ const projects = [
         description: "Collection of algorithms in python for self-study",
         github: "https://github.com/daalgi/algorithms",
         tags: [
-            "computer science",
-            "repo"
+            "computer science"
         ],
         technologies: [
             "python"
@@ -79,8 +78,7 @@ const projects = [
         description: "Collection of data structures in python for self-study",
         github: "https://github.com/daalgi/data-structures",
         tags: [
-            "computer science",
-            "repo"
+            "computer science"
         ],
         technologies: [
             "python"
@@ -92,7 +90,6 @@ const projects = [
         github: "https://github.com/daalgi/py-sudoku",
         tags: [
             "library",
-            "repo"
         ],
         technologies: [
             "python"
@@ -100,16 +97,49 @@ const projects = [
     },
     {
         title: "snm-js",
-        description: "Simple Numerical Methods Javascript library (snm-js). It contains a set of numerical methods for the development of engineering projects",
+        description: "Simple Numerical Methods Javascript library (snm-js). It contains a set of useful numerical methods for the development of engineering projects",
         github: "https://github.com/daalgi/snm-js",
         tags: [
             "library",
-            "repo"
         ],
         technologies: [
             "javascript"
         ]
-    }
+    },
+    {
+        title: "freeCodeCamp",
+        description: "Full Stack Certification by freeCodeCamp",
+        web: "https://www.freecodecamp.org/certification/daalgi/full-stack",
+        tags: [
+            "certification"
+        ],
+        technologies: [
+            "html", "css", "javascript", "react", "d3", "node", "mongodb"
+        ]
+    },
+    {
+        title: "Deep Learning Specialization",
+        description: "Deep Learning Specialization certificate by DeepLearning.AI",
+        web: "https://www.coursera.org/account/accomplishments/specialization/certificate/7HBQM9VJP9FH",
+        tags: [
+            "certification"
+        ],
+        technologies: [
+            "machine learning", "deep learning", "python", "tensor-flow"
+        ]
+    },
+    {
+        title: "Cable-stayed bridge",
+        description: "Parametric study and design of a cable-stayed bridge for the thesis of my master's degree in Civil Engineering",
+        // web: "https://www.freecodecamp.org/certification/daalgi/full-stack",
+        // post: "",
+        tags: [
+            "structural engineering"
+        ],
+        technologies: [
+            "ansys", "excel", "vba", "octave"
+        ]
+    },
 ]
 
 export default projects

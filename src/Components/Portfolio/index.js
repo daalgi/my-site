@@ -1,14 +1,14 @@
+import LaunchIcon from '@material-ui/icons/Launch'
+import GitHubIcon from '@material-ui/icons/GitHub'
+
 import projects from './projects'
 import './styles.css'
 // import Card from './Card'
 
 const Button = ({ text = "", icon = "", url = null }) =>
-    <button
-        className="card-button"
-    // onClick={url ? window.location.href = url : false}
-    >
-        <a href={url} target="_blank">{text}</a>
-    </button>
+    <a href={url} target="_blank" className="card-button">
+        {text}
+    </a>
 
 const Card = ({ ...props }) =>
     <div className="card">

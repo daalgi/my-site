@@ -1,16 +1,17 @@
 import React from 'react'
-import CssBaseline from '@material-ui/core/CssBaseline';
+// import CssBaseline from '@material-ui/core/CssBaseline';
 
 import Header from './Header'
+import './styles.css'
 
 
 const Layout = ({ children }) =>
     <>
-        <CssBaseline />
+        {/* <CssBaseline /> */}
         <Header />
-        <div id="page-content">
+        <main id="page-content">
             {children}
-        </div>
+        </main>
     </>
 
 export default Layout
