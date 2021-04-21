@@ -5,6 +5,18 @@
   --cprimary3: hsl(213, 13%, 19%);
   --cprimary4: hsl(213, 13%, 23%);
   --cprimary5: hsl(213, 13%, 27%);
+  --cprimarytrans: hsla(213, 13%, 13%, 0.5);
+  --cprimary1trans: hsla(213, 13%, 15%, 0.5);
+  --cprimary2trans: hsla(213, 13%, 17%, 0.5);
+  --cprimary3trans: hsla(213, 13%, 19%, 0.5);
+  --cprimary4trans: hsla(213, 13%, 23%, 0.5);
+  --cprimary5trans: hsla(213, 13%, 27%, 0.5);
+  --clight: hsl(0, 0%, 30%);
+  --clight1: hsl(0, 0%, 35%);
+  --clight2: hsl(0, 0%, 40%);
+  --clight3: hsl(0, 0%, 45%);
+  --clight4: hsl(0, 0%, 50%);
+  --clight5: hsl(0, 0%, 55%);
   --csecondary: hsl(213, 13%, 13%);
   --csecondary1: hsl(213, 13%, 15%);
   --csecondary2: hsl(213, 13%, 17%);

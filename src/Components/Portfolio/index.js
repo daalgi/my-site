@@ -16,21 +16,21 @@ const Card = ({ ...props }) =>
             <div className="card-title">{props.title}</div>
             <div className="card-tags">
                 {props?.tags.map((tag, index) =>
-                    <div key={index} className="card-tag">{tag}</div>
+                    <div key={index} className="card-chip">{tag}</div>
                 )}
             </div>
         </div>
 
         <div className="card-description">{props.description}</div>
 
-        {/* <p>Technologies: </p> */}
         <div className="card-technologies">
             {props?.technologies.map((tech, index) =>
-                <div key={index} className="card-technology">{tech}</div>
+                <div key={index} className="card-chip">{tech}</div>
             )}
         </div>
         <div className="card-buttons">
             {props.post && <Button text="Details" />}
+            {props.certificate && <Button text="Certificate" />}
             {props.github && <Button text="Github" url={props.github} />}
             {props.web && <Button text="Web" url={props.web} />}
         </div>
@@ -41,7 +41,7 @@ export default () => {
     // console.log(projects)
     return (
         <>
-            <h2>Portfolio</h2>
+            <h1>Portfolio</h1>
             <div className="cards-grid">
                 {projects.map((props, index) =>
                     <Card key={index} {...props} />

@@ -1,8 +1,23 @@
 /**
  * project object structure:
- *  { title, description, post, github, web, tags, technologies }
+ *  { title, description, post, github, web, certification, tags, technologies }
  */
 const projects = [
+    {
+        title: "Engineering Toolbag",
+        description: "Apps to help with some simple, but yet sometimes tedious, tasks for engineers",
+        web: "https://engineertoolbag.web.app/",
+        tags: [
+            "web-app",
+            "engineering"
+        ],
+        technologies: [
+            "html",
+            "css",
+            "javascript",
+            "react"
+        ]
+    },
     {
         title: "Sudoku",
         description: "Sudoku game with different difficulty levels and cool highlighting",
@@ -20,25 +35,10 @@ const projects = [
     },
     {
         title: "Engineering portfolio map",
-        description: "Summary of the projects that I've participated in by country shown in a world map",
+        description: "Summary of the projects that I've participated in by country and shown in a world map",
         web: "https://daalgi.github.io/engineering-portfolio-map/",
         tags: [
             "visualization"
-        ],
-        technologies: [
-            "html",
-            "css",
-            "javascript",
-            "react"
-        ]
-    },
-    {
-        title: "Engineering Toolbag",
-        description: "Apps to help with some simple, but yet sometimes tedious, tasks for engineers",
-        web: "https://engineertoolbag.web.app/",
-        tags: [
-            "web-app",
-            "engineering"
         ],
         technologies: [
             "html",
@@ -109,7 +109,7 @@ const projects = [
     {
         title: "freeCodeCamp",
         description: "Full Stack Certification by freeCodeCamp",
-        web: "https://www.freecodecamp.org/certification/daalgi/full-stack",
+        certificate: "https://www.freecodecamp.org/certification/daalgi/full-stack",
         tags: [
             "certification"
         ],
@@ -120,7 +120,7 @@ const projects = [
     {
         title: "Deep Learning Specialization",
         description: "Deep Learning Specialization certificate by DeepLearning.AI",
-        web: "https://www.coursera.org/account/accomplishments/specialization/certificate/7HBQM9VJP9FH",
+        certificate: "https://www.coursera.org/account/accomplishments/specialization/certificate/7HBQM9VJP9FH",
         tags: [
             "certification"
         ],
@@ -131,8 +131,7 @@ const projects = [
     {
         title: "Cable-stayed bridge",
         description: "Parametric study and design of a cable-stayed bridge for the thesis of my master's degree in Civil Engineering",
-        // web: "https://www.freecodecamp.org/certification/daalgi/full-stack",
-        // post: "",
+        post: "",
         tags: [
             "structural engineering"
         ],

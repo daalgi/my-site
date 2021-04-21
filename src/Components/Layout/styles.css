@@ -167,7 +167,12 @@ nav a:hover {
 }
 
 #page-content {
-    background: var(--cprimary1);
+    background: var(--cprimary3);
     padding-top: 56px;
     height: 100vh;
+    max-width: 1200px;
+    margin: 0 auto;
+    /* text-align: center; */
+    /* border: 1px solid red; */
+    
 }
