@@ -1,46 +1,33 @@
 import { useState } from 'react'
-import { Link, useLocation } from 'react-router-dom'
-import DehazeIcon from '@material-ui/icons/Dehaze'
+import { Link } from 'react-router-dom'
 import { ReactComponent as MenuIcon } from "../../icons/menu.svg";
 
 import routes from '../routes'
 
 
-const Header = () => {
-    const [toggle, setToggle] = useState(false)
-
-    const handleToggle = () => setToggle(!toggle)
-
-    return (
+const Header = () =>
+    <header>
+        <Link className="header-logo" to="/">David A.G.</Link>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" />
         <nav>
-            <div className="nav-div">
-                <div className="nav-items-container">
-                    <div className="nav-logo">
-                        <Link to="/" >David A.G.</Link>
-                    </div>
-                    <ul className="nav-right">
-                        {routes.map(({ title, path, inHeader }, index) =>
-                            inHeader && (
-                                <Link
-                                    key={index}
-                                    to={path}
-                                    className={`nav-item ${toggle ? "nav-item-hidden" : ""}`}
-                                >
-                                    {title.toLocaleUpperCase()}
-                                </Link>
-
-                            )
-                        )}
-                        <MenuIcon
-                            className="nav-menu-icon"
-                            onClick={handleToggle}
-                        />
-                    </ul>
-
-                </div>
-            </div>
+            <ul>
+                {routes.map(({ title, path, inHeader }, index) =>
+                    inHeader && (
+                        <li key={index}>
+                            <Link 
+                                //key={index}
+                                to={path} className="nav-item">
+                                {title}
+                            </Link>
+                        </li>
+                    )
+                )}
+            </ul>
         </nav>
-    )
-}
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+        </label>
+    </header>
+
 
 export default Header
