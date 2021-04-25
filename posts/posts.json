@@ -1,0 +1,18 @@
+[
+    {
+        "id": "001",
+        "title": "Cable-stayed bridge",
+        "description": "Parametric study and desing of a cable-stayed bridge",
+        "tags": ["structural engineering", "bridge", "ansys"]
+    }, {
+        "id": "002",
+        "title": "py-sudoku",
+        "description": "Module to read, solve and generete sudokus",
+        "file": "https://raw.githubusercontent.com/daalgi/py-sudoku/main/README.md",
+        "tags": ["python", "sudoku"]
+    }, {
+        "title": "About",
+        "description": "",
+        "tags": []
+    }
+]

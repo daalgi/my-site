@@ -1,6 +1,9 @@
 # Cable-stayed bridge
 
-Thesis: Design and calculation of a bridge in the northern access to Carcaixent (Valencia) over the Jucar River (2012)
+The thesis of my master's degree in civil engineering consisted in a parametric study, design and calculation of a cable-stayed bridge, which passed over the Jucar River, in Carcaixent (Valencia, Spain).
+
+The total length of the bridge was 140 m. After evaluating the most feasable structural systems, a cable-stayed bridge with two spans seemed the most suitable solution.
+
 
 The geotechnic and the hydraulic constraints were analyzed. 
 

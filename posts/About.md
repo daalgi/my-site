@@ -1,3 +1,3 @@
 # About
 
-I'm a civil structural engineer by profession, and a software developer enthusiast.
+I'm a civil structural engineer by profession, but a software developer by passion.
