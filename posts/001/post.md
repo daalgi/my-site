@@ -8,7 +8,7 @@ The total length of the bridge was 165.5 m. After evaluating the most feasable s
 
 The final solution has a main span of 130 m. The load is carried by 8 stay cables to the 59.7-m-height tower, which is restrained by the 8 back stay cables anchored to the 35.5-m side span and to the abutment.
 
-![General view](https://github.com/daalgi/my-site/blob/ef2b73a5d5c05d9df329155273aa79ed5b035cae/posts/001/00-General_view.png)
+![General view](https://raw.githubusercontent.com/daalgi/my-site/main/posts/001/00-General_view.png)
 
 A parametric study was carried out to determine the suitable number of cables, the spacing between them, the height of the pylon, etc. 
 
