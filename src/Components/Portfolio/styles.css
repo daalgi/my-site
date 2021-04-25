@@ -1,3 +1,7 @@
+.portfolio-container {
+    background: var(--cprimary3);
+    padding: 16px 32px;
+}
 .cards-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -24,11 +28,13 @@
 }
 .card-title {
     font-size: 1.5em;
+    text-align: left;
     color: var(--ctext);
     margin-bottom: 16px;
 }
 .card-description {
     font-size: 1em;
+    text-align: left;
     color: var(--ctext2);
     margin-bottom: 8px;
 }

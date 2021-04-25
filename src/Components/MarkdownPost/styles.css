@@ -1,0 +1,8 @@
+.md-container {
+    margin: 0 auto;
+    height: 100%;
+    max-width: 600px;
+    background: var(--cprimary3);
+    padding: 2em 0;
+    /* box-shadow: 0 0 1px 11px hsla(0, 0%, 90%, 0.2); */
+}

@@ -1,10 +1,14 @@
 :root {
   --cprimary: hsl(213, 13%, 13%);
+  /* --cprimary: hsl(32, 38%, 53%); */
   --cprimary1: hsl(213, 13%, 15%);
   --cprimary2: hsl(213, 13%, 17%);
   --cprimary3: hsl(213, 13%, 19%);
   --cprimary4: hsl(213, 13%, 23%);
   --cprimary5: hsl(213, 13%, 27%);
+  --cprimary6: hsl(213, 13%, 33%);
+  --cprimary7: hsl(213, 13%, 38%);
+  --cprimary8: hsl(213, 13%, 45%);
   --cprimarytrans: hsla(213, 13%, 13%, 0.5);
   --cprimary1trans: hsla(213, 13%, 15%, 0.5);
   --cprimary2trans: hsla(213, 13%, 17%, 0.5);
@@ -23,16 +27,26 @@
   --ccontrast: hsl(90, 90%, 30%);
   --ccontrast1: hsl(90, 90%, 40%);
   --ccontrast2: hsl(90, 90%, 50%);
-  --ctext: hsl(0, 0%, 85%);
-  --ctext1: hsl(0, 0%, 75%);
+  --ctext: hsl(0, 0%, 88%);
+  --ctext1: hsl(0, 0%, 80%);
   --ctext2: hsl(0, 0%, 65%);
   --ctext3: hsl(0, 0%, 55%);
+
+  --ctext4: hsl(0, 0%, 45%);
+  --ctext5: hsl(0, 0%, 35%);
+  --ctext6: hsl(0, 0%, 25%);
+  --ctext7: hsl(0, 0%, 15%);
+  --ctext8: hsl(0, 0%, 5%);
+
+  --cheader: hsl(213, 13%, 19%);
+  --ctextheader: hsl(0, 0%, 88%);
+  --cpage: var(--cprimary5);
 }
 
 body {
   margin: 0;
-  color: var(--ctext1);
-  background: var(--cprimary3);
+  color: var(--ctext);
+  background: var(--cpage);
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -55,4 +69,3 @@ a {
   color: inherit;
   text-decoration: inherit; /* no underline */
 }
-

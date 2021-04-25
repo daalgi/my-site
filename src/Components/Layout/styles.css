@@ -1,19 +1,22 @@
 header {
-    background: var(--cprimary4);
+    background: var(--cheader);
     text-align: left;
     position: fixed;
-    height: 46px;
+    height: 48px;
     width: 100%;
     z-index: 999;
+    /* border: 1px solid white; */
 }
 
 .header-logo {
     margin: 0;
+    padding: 0;
     margin-left: 16px;
     font-size: 1.8rem;
     height: 100%;
     display: flex;
-    align-items: center;
+    align-items: center; 
+    color: var(--ctextheader)
     /* border: 1px solid red; */
 }
 
@@ -36,7 +39,7 @@ header {
 .nav-toggle-label span::before,
 .nav-toggle-label span::after{
     display: block;
-    background: var(--ctext1);
+    background: var(--ctextheader);
     height: 2.5px;
     width: 2em;
     border-radius: 2px;
@@ -61,7 +64,7 @@ nav {
     text-align: center;
     top: 100%;
     left: 0;
-    background: var(--cprimary4);
+    background: var(--cheader);
     width: 100%;
     transform: scale(1, 0); 
     transform-origin: top;
@@ -80,7 +83,7 @@ nav li {
 }
 
 nav a {    
-    color: var(--ctext1);
+    color: var(--ctextheader);
     text-decoration: none;
     font-size: 1.2rem;
     text-transform: uppercase;
@@ -88,9 +91,9 @@ nav a {
     transition: opacity 150ms ease-in-out 100ms;
 }
 
-nav a:hover {
-    color: var(--ctext);
-}
+/* nav a:hover {
+    color: var(--ctext1);
+} */
 
 .nav-toggle:checked ~ nav {
     transform: scale(1, 1);
@@ -99,6 +102,15 @@ nav a:hover {
 .nav-toggle:checked ~ nav a {
     opacity: 1;
 }
+
+.nav-item-icon {
+    fill: var(--ctextheader);
+    width: 24px;
+}
+/* .nav-item-icon:hover {
+    fill: var(--ctext);
+} */
+
 
 @media screen and (min-width: 600px) {
     .nav-toggle-label {
@@ -120,9 +132,10 @@ nav a:hover {
     nav {
         all: unset;
         grid-column: 3 / 4;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
+        display: flex !important;
+        justify-content: flex-end !important;
+        align-items: center !important;
+        height: 100%;
         /* border: 1px solid orange; */
     }
 
@@ -167,12 +180,15 @@ nav a:hover {
 }
 
 #page-content {
-    background: var(--cprimary3);
+    background: var(--cpage);
     padding-top: 56px;
     height: 100vh;
     max-width: 1200px;
     margin: 0 auto;
     /* text-align: center; */
     /* border: 1px solid red; */
-    
+}
+#page-content p {
+    padding: 0 36px;
+    text-align: left;
 }

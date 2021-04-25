@@ -1,54 +1,46 @@
-import { makeStyles } from '@material-ui/core/styles'
-import Card from '@material-ui/core/Card'
-import CardActions from '@material-ui/core/CardActions'
-import CardContent from '@material-ui/core/CardContent'
-import Button from '@material-ui/core/Button'
-import Typography from '@material-ui/core/Typography'
-import Chip from '@material-ui/core/Chip'
+import { Link } from 'react-router-dom'
 
-const useStyles = makeStyles({
-    root: {
-        minWidth: 275,
-    },
-    bullet: {
-        display: 'inline-block',
-        margin: '0 2px',
-        transform: 'scale(0.8)',
-    },
-    title: {
-        fontSize: "1.2em",
-    },
-    pos: {
-        marginBottom: 12,
-    },
-})
+import './styles.css'
 
-export default ({ ...props }) => {
-    const classes = useStyles()
-    console.log(props)
-    return (
-        <Card className={classes.root}>
-            <CardContent>
-                {/* {props} */}
-                <Typography className={classes.title} color="textSecondary">
-                    {props?.title}
-                </Typography>
-                {/* <Typography variant="h5" component="h2">
-                    be{bull}nev{bull}o{bull}lent
-                </Typography> */}
+
+const Button = ({
+    text = "", icon = "", externalUrl = null, internalUrl = null
+}) =>
+    internalUrl
+        ? <a className="card-button"><Link to={internalUrl}>{text}</Link></a>
+        : <a href={externalUrl} target="_blank" className="card-button">
+            {text}
+        </a>
+
+const Card = ({ ...props }) =>
+    <div className="card">
+        <div className="card-header">
+            <div className="card-title">{props.title}</div>
+            <div className="card-tags">
                 {props?.tags.map((tag, index) =>
-                    <Chip key={index} variant="outlined" color="primary">{tag}</Chip>                    
+                    <div key={index} className="card-chip">{tag}</div>
                 )}
+            </div>
+        </div>
 
-                <Typography variant="body2" component="p">
-                    {props?.description}
-                </Typography>
-            </CardContent>
-            <CardActions>
-            {props.post && <Button size="small">Details</Button>}
-            {props.github && <Button size="small">Github</Button>}
-            {props.web && <Button size="small">Web</Button>}
-            </CardActions>
-        </Card>
-    )
-}
+        <div className="card-description">{props.description}</div>
+
+        <div className="card-technologies">
+            {props?.technologies.map((tech, index) =>
+                <div key={index} className="card-chip">{tech}</div>
+            )}
+        </div>
+        <div className="card-buttons">
+            {props.post &&
+                <Button text="Post" internalUrl={props.post} />}
+            {props.certificate &&
+                <Button text="Certificate" externalUrl={props.certificate}/>}
+            {props.github &&
+                <Button text="Github" externalUrl={props.github} />}
+            {props.web &&
+                <Button text="Web" externalUrl={props.web} />}
+        </div>
+
+    </div>
+
+export default Card

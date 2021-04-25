@@ -1,6 +1,6 @@
 /**
  * project object structure:
- *  { title, description, post, github, web, certification, tags, technologies }
+ *  { title, description, post, github, web, certificate, tags, technologies }
  */
 const projects = [
     {
@@ -131,7 +131,7 @@ const projects = [
     {
         title: "Cable-stayed bridge",
         description: "Parametric study and design of a cable-stayed bridge for the thesis of my master's degree in Civil Engineering",
-        post: "",
+        post: "/blog/post/001/",
         tags: [
             "structural engineering"
         ],

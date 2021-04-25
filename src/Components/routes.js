@@ -1,7 +1,7 @@
 import Home from './Home'
-import About from './About'
+import Blog from './Blog'
 import Portfolio from './Portfolio'
-import Contact from './Contact'
+
 
 const routes = [
     {
@@ -10,23 +10,18 @@ const routes = [
         inHeader: false,
         component: _ => <Home />
     }, {
-        title: "About", icon: "",
-        description: "About",
-        path: "/about/", exact: true,
+        title: "Blog", icon: "",
+        isBlog: true,
+        description: "Blog",
+        path: "/blog/", exact: true,
         inHeader: true,
-        component: _ => <About />
+        component: posts => <Blog posts={posts} />
     }, {
         title: "Portfolio", icon: "",
         path: "/portfolio/", exact: true,
         inHeader: true,
         component: _ => <Portfolio />
-    }, {
-        title: "Contact", icon: "",
-        description: "Contact",
-        path: "/contact/", exact: true,
-        inHeader: true, 
-        component: _ => <Contact />
-    } 
+    },
 ]
 
 export default routes
