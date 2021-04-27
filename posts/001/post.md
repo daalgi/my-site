@@ -12,23 +12,24 @@ I started by developing a script to make parametric models in `ANSYS APDL`, whic
 1. Model the bridge as a continuous beam with supports at the stays anchorages to estimate the needed preload and the maximum tensile forces.
 2. Select the needed cables within a catalogue.
 3. Model the complete bridge (deck, tower, and stays) and apply the different load cases.
+13. asdf asdf asdf a
 
 The final solution had a main span of 130 m. The load was carried by 8 stay cables to the 59.7-m-height tower, which was restrained by the 8 back stay cables anchored to the 35.5-m side span and to the abutment.
 
 ![General view](https://raw.githubusercontent.com/daalgi/my-site/main/posts/001/00-General_view.png)
 
 Once the global system key parameters were set, it was time to design the details: the deck, the tower, and the anchorages.
-
-
-
+- Deck
+- Tower
+- Anchorages
 
 ## Deck
 
 The deck depth was constrained 
 
-# Tower
+## Tower
 
-# Anchorages
+## Anchorages
 
 
 
