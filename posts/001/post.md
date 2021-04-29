@@ -14,7 +14,7 @@ I started by developing a script to parametrice the generation of finite element
 3. Model the complete bridge (deck, tower, and stays) and apply different load cases.
 4. Post-process the internal stress distributions.
 
-![Global FEM](010-Global-FEM.gif)
+![Global FEM](010-global-fem.gif)
 
 Once the script was ready, I started studying how different parameters influenced the stress distributions in the structural elements, the needed weight and volume of materials, and, of course, the cost. I analyzed multiple parameters like the number of tendons, the stiffness of the deck and the tower, the inclination of the tower, the ratio between the tower height and the main span or different ratios between the anchorages distances. Then, with a dataset of several hundred bridges and the analysis made, I had a much deeper understanding of what was going to work better. Now I was in a much better position to decide what the bridge would look like.
 
@@ -45,12 +45,12 @@ Eventually, the deck two main cross-sections can be seen in the following figure
 
 ## Tower
 
-![](05.png)
+![Tower](030-tower.gif)
 
 ## Anchorages
 
-![Anchorage in the tower](06-anchorage-tower.png)
+![Anchorage in the tower](040-anchorage-tower.png)
 
 ## Construction process
 
-![Anchorage in the tower](07.png)
+![Construction process](050-cp.png)
