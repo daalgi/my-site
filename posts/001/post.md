@@ -49,7 +49,7 @@ Eventually, the deck two main cross-sections can be seen in the following figure
 
 ## Anchorages
 
-![Anchorage in the tower](040-anchorage-tower.png)
+![Anchorage in the tower](https://raw.githubusercontent.com/daalgi/my-site/main/posts/001/040-anchorage-tower.png)
 
 ## Construction process
 
