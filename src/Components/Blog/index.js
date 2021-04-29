@@ -24,9 +24,12 @@ export default ({ posts }) => {
                 <Link to={post.path}>
                     <MarkdownPost
                         file={post.file}
+                        postId={post.id}
                         maxCharacters={PREVIEW_NUM_CHAR}
                         className="blog-null-class"
-                        components={{ h1: PostPreviewH1 }}
+                        components={{
+                            h1: PostPreviewH1,
+                        }}
                     />
                 </Link>
             </div>

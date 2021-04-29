@@ -1,8 +1,11 @@
+import './styles.css'
+
+
 export default () =>
     <>
-        <section>
-            <h1>Hi, I'm David</h1>
-            <p>a structural engineer and software developer</p>
+        <section className="home-div">
+            <h1>Welcome!</h1>
+            <p>I'm David, a structural engineer and software developer</p>
         </section>
         
     </>

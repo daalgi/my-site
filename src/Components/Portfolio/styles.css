@@ -1,6 +1,8 @@
 .portfolio-container {
     background: var(--cprimary3);
     padding: 16px 32px;
+    margin: 0 auto;
+    max-width: 1200px;
 }
 .cards-grid {
     display: grid;

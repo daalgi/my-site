@@ -1,8 +1,46 @@
+.md-section {
+    margin: 0 auto;
+    max-width: 800px;
+    background: var(--cprimary3);
+}
 .md-container {
     margin: 0 auto;
     height: 100%;
-    max-width: 600px;
+    max-width: 640px;
     background: var(--cprimary3);
-    padding: 2em 0;
+    padding: 64px 0px;
     /* box-shadow: 0 0 1px 11px hsla(0, 0%, 90%, 0.2); */
+}
+
+.md-container img {
+    width: 100%;
+    margin: 8px 0;
+}
+
+.md-container p {
+    text-align: justify;
+}
+
+.md-container code {
+    font-family: monospace;
+    background: var(--cprimary2);
+    color: var(--ccontrast);
+    padding: 0 2px;
+    /* overflow-x: auto; */
+}
+.md-container pre code {
+    display: block;
+    font-size: 0.95em;
+    overflow-x: auto;
+    max-width: 100%;
+    min-width: 100px;
+    padding: 8px;
+    margin: 0 36px;
+}
+.md-container ol, .md-container ul {
+    margin: 12px 24px;
+    text-align: justify;
+}
+.md-container li {
+    padding: 3px 6px;
 }

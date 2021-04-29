@@ -1,11 +1,11 @@
 :root {
   --cprimary: hsl(213, 13%, 13%);
   /* --cprimary: hsl(32, 38%, 53%); */
-  --cprimary1: hsl(213, 13%, 15%);
-  --cprimary2: hsl(213, 13%, 17%);
-  --cprimary3: hsl(213, 13%, 19%);
+  --cprimary1: hsl(213, 13%, 10%);
+  --cprimary2: hsl(213, 13%, 11%);
+  --cprimary3: hsl(213, 13%, 17%);
   --cprimary4: hsl(213, 13%, 23%);
-  --cprimary5: hsl(213, 13%, 27%);
+  --cprimary5: hsl(213, 13%, 25%);
   --cprimary6: hsl(213, 13%, 33%);
   --cprimary7: hsl(213, 13%, 38%);
   --cprimary8: hsl(213, 13%, 45%);
@@ -24,12 +24,15 @@
   --csecondary: hsl(213, 13%, 13%);
   --csecondary1: hsl(213, 13%, 15%);
   --csecondary2: hsl(213, 13%, 17%);
-  --ccontrast: hsl(90, 90%, 30%);
-  --ccontrast1: hsl(90, 90%, 40%);
-  --ccontrast2: hsl(90, 90%, 50%);
-  --ctext: hsl(0, 0%, 88%);
-  --ctext1: hsl(0, 0%, 80%);
-  --ctext2: hsl(0, 0%, 65%);
+
+  --ccontrast: hsl(90, 75%, 30%);
+  --ccontrast1: hsl(90, 90%, 20%);
+  --ccontrast2: hsl(90, 90%, 30%);
+  --ccontrast3: hsl(90, 90%, 40%);
+  --ccontrast4: hsl(90, 90%, 50%);
+  --ctext: hsl(0, 0%, 90%);
+  --ctext1: hsl(0, 0%, 82%);
+  --ctext2: hsl(0, 0%, 68%);
   --ctext3: hsl(0, 0%, 55%);
 
   --ctext4: hsl(0, 0%, 45%);
@@ -38,7 +41,7 @@
   --ctext7: hsl(0, 0%, 15%);
   --ctext8: hsl(0, 0%, 5%);
 
-  --cheader: hsl(213, 13%, 19%);
+  --cheader: hsl(213, 13%, 17%);
   --ctextheader: hsl(0, 0%, 88%);
   --cpage: var(--cprimary5);
 }

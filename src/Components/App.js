@@ -9,6 +9,8 @@ import siteRoutes from './routes'
 import Home from './Home'
 import MarkdownPost from './MarkdownPost'
 
+import postsjson from '../posts/posts.json'
+
 
 const App = () => {
     const [routes, setRoutes] = useState(siteRoutes)
@@ -25,12 +27,21 @@ const App = () => {
                     post.isPost = true
                     post.path = `/blog/post/${post.id}/`
                     post.exact = true
-                    post.component = () => <MarkdownPost file={post.file} />
+                    post.component = () => 
+                        <MarkdownPost 
+                            postId={post.id}
+                            file={post.file} 
+                        />
                 }
                 setPosts(posts)
                 setRoutes([...siteRoutes, ...posts])
             })
             .catch(err => console.log(err))
+
+        // console.log(postsjson)
+        // setPosts(postsjson)
+        // setRoutes([...routes, ...postsjson])
+
     }, [])
     // console.log(routes)
     // console.log(posts)
@@ -46,10 +57,10 @@ const App = () => {
                                 path={route.path}
                                 exact={route.exact}
                             >{
-                                route.isBlog 
-                                ? route.component(posts) // Blog component
-                                : <route.component />
-                            }
+                                    route.isBlog
+                                        ? route.component(posts) // Blog component
+                                        : <route.component />
+                                }
                             </Route>
                         )}
                         {/* <Route path='*' >{<NotFound />}</Route> */}
