@@ -4,7 +4,9 @@ The thesis of my master's degree in civil engineering consisted in a parametric 
 
 The total length of the bridge was 165.5 m and a main span of 130 m. After evaluating the most feasable structural systems, a 2-span cable-stayed bridge with one tower was chosen as the most suitable solution.
 
-When I started to dig into the structural system of the cable-stayed bridges I found that there were several key parameters influencing its global behaviour. Although in the specialized literature you could find recommendations for the design of this type of structures, normally they refer to bridges with two towers. So instead of trying to extrapolate those recommendations, which by the way would have saved me quite a few months of work, and given that I enjoy the process of solving problems and building tools to do it, I chose to perform multiple parametric studies and find some rules that would help me to decide the what an appropriate final design would be.
+When I started to dig into the structural system of the cable-stayed bridges I found that there were several key parameters influencing its global behaviour. Although in the specialized literature you could find recommendations for the design of this type of structures, normally they refered to bridges with two towers. So instead of extrapolating those recommendations, which by the way would have saved me quite a few months of work, and given that I enjoy the process of solving problems and building tools to do it, I chose to perform multiple parametric studies and find some rules that would help me to decide the what an appropriate final design would be.
+
+It's important to mention that I self-developed all the tools used for the verification of the structural safety of the bridge. Well, all but the finite element software (that it'd have been a bit too much).
 
 ## Global system
 
@@ -33,24 +35,34 @@ Also, given the non-linearity of the system introduced by the tendons, the super
 
 ## Deck
 
-The deck was composite steel box-girder with a concrete slab at the top. I developed a spreadsheet to conveniently verify all the relevant limit states in all the sections of the deck. Additionally, I developed a the module in `VBA` to perform some of the more complex calculations such as the ultimate axial force-bending moment diagram for each section.
+The deck was composite steel box-girder with a concrete slab at the top. I developed a spreadsheet to conveniently verify all the relevant limit states in all the sections of the deck. Additionally, I developed a module in `VBA` to perform some of the more complex calculations such as the ultimate axial force-bending moment diagram for each section.
 
 ![Composite deck ULS N-M diagram](020-deck-NMdiagram.png)
 
 Additionally, I made a new script in `ANSYS APDL` to parametrize a local model of the deck with shell elements for the concrete slab and steel girder, and beam elements for the diagonals to stiffen the section. The goal was to find a configuration that would minimize the quantity of materials, including the slab reinforcement, and fulfilled the corresponding limit states.
 
+![Deck local FEM](021-deck-fem.png)
+
 Eventually, the deck two main cross-sections can be seen in the following figure.
 
-![Composite deck cross-sections](021-deck-sections.png)
+![Composite deck cross-sections](022-deck-sections.png)
 
 ## Tower
+
+The 60-m reinforced concrete tower was also verified using self-developed tools implemented in spreadsheets and `VBA`.
 
 ![Tower](030-tower.gif)
 
 ## Anchorages
 
-![Anchorage in the tower](https://raw.githubusercontent.com/daalgi/my-site/main/posts/001/040-anchorage-tower.png)
+The tendons' anchorages were designed by means of steel plates connected to the deck and tower. These elements were analyzed with local finite element models using non-linear materials and taking into account the geometric non-linearities. Again, the models were parametrized using `ANSYS APDL`.
+
+![Anchorage in the deck](040-anchorage-deck.png)
+
+![Anchorage in the tower](041-anchorage-tower.png)
 
 ## Construction process
 
-![Construction process](050-cp.png)
+Lastly, the deck was verified during the construction process. In order to control the deflections and internal stresses, the preload in the tendons was determined at every step of the assembly of the bridge.
+
+![Construction process](050-cp.gif)
