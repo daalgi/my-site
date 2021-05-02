@@ -85,6 +85,21 @@ const projects = [
         ]
     },
     {
+        title: "My site",
+        description: "This site",
+        github: "https://github.com/daalgi/my-site",
+        tags: [
+            "blog", "portfolio"
+        ],
+        technologies: [
+            "html",
+            "css",
+            "javascript",
+            "react",
+            "markdown"
+        ]
+    },
+    {
         title: "py-sudoku",
         description: "Library to read, generate and solve sudokus",
         github: "https://github.com/daalgi/py-sudoku",

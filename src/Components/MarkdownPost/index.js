@@ -4,26 +4,19 @@ import ReactMarkdown from 'react-markdown'
 import './styles.css'
 
 
-const Image = (postId = null, { node, ...props }) => {
-    // console.log(postId, props.src)
-    // console.log(`https://raw.githubusercontent.com/daalgi/my-site/main/posts/${postId}/${props.src}`)
-    console.log(props.src.includes('https://')
-        ? props.src
-        : `https://raw.githubusercontent.com/daalgi/my-site/main/posts/${postId}/${props.src}`)
-    if (!postId)
-        return <img {...props} />
+const Image = (postId = null, { node, ...props }) =>
+    !postId
+        ? <img {...props} />
+        : <img
+            data-loading="lazy"
+            {...props}
+            src={props.src.includes('https://')
+                ? props.src
+                : `https://raw.githubusercontent.com/daalgi/my-site/main/posts/${postId}/${props.src}`
+                //https://raw.githubusercontent.com/daalgi/my-site/main/posts/001/010-global-fem.png
+            }
+        />
 
-    return <img
-        data-loading="lazy"
-        {...props}
-        src={props.src.includes('https://')
-            ? props.src
-            : `https://raw.githubusercontent.com/daalgi/my-site/main/posts/${postId}/${props.src}`
-            //https://raw.githubusercontent.com/daalgi/my-site/main/posts/001/010-global-fem.png
-        }
-
-    />
-}
 
 export default ({
     file, postId = null, maxCharacters = null, components = null, className = null

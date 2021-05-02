@@ -7,7 +7,7 @@ const Button = ({
     text = "", icon = "", externalUrl = null, internalUrl = null
 }) =>
     internalUrl
-        ? <a className="card-button"><Link to={internalUrl}>{text}</Link></a>
+        ? <Link className="card-button" to={internalUrl}>{text}</Link>
         : <a href={externalUrl} target="_blank" className="card-button">
             {text}
         </a>

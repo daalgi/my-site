@@ -106,6 +106,7 @@ nav a {
 .nav-item-icon {
     fill: var(--ctextheader);
     width: 24px;
+    padding: 0 4px;
 }
 /* .nav-item-icon:hover {
     fill: var(--ctext);

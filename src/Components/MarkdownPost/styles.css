@@ -8,7 +8,7 @@
     height: 100%;
     max-width: 640px;
     background: var(--cprimary3);
-    padding: 64px 0px;
+    padding: 16px 0px;
     /* box-shadow: 0 0 1px 11px hsla(0, 0%, 90%, 0.2); */
 }
 

@@ -4,7 +4,7 @@ import MarkdownPost from '../MarkdownPost'
 // import posts from '../posts.js'
 import './styles.css'
 
-const PREVIEW_NUM_CHAR = 100
+const PREVIEW_NUM_CHAR = 113
 
 const PostPreviewH1 = ({ node, ...props }) =>
     <h1
@@ -21,17 +21,18 @@ export default ({ posts }) => {
         <br />
         {posts && posts.map((post, index) =>
             <div key={index} className="blog-post-preview">
-                <Link to={post.path}>
-                    <MarkdownPost
+                <MarkdownPost
                         file={post.file}
                         postId={post.id}
                         maxCharacters={PREVIEW_NUM_CHAR}
-                        className="blog-null-class"
                         components={{
                             h1: PostPreviewH1,
                         }}
                     />
+                <Link to={post.path} className="blog-post-read-more">
+                    Read more
                 </Link>
+                {/* <br className="blog-separator" /> */}
             </div>
         )}
     </div>
