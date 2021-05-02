@@ -5,7 +5,7 @@
         "description": "Parametric study and desing of a cable-stayed bridge",
         "tags": ["structural engineering", "bridge", "ansys"],
         "created": "2021-04-27",
-        "updatd": "2021-04-30"
+        "updated": "2021-04-30"
     }, {
         "id": "002",
         "title": "py-sudoku",
@@ -13,10 +13,6 @@
         "file": "https://raw.githubusercontent.com/daalgi/py-sudoku/main/README.md",
         "tags": ["python", "sudoku"],
         "created": "2021-04-27",
-        "updatd": "2021-04-30"
-    }, {
-        "title": "About",
-        "description": "",
-        "tags": []
+        "updated": "2021-04-30"
     }
 ]
