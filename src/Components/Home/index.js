@@ -9,7 +9,9 @@ export default () =>
     <div className="home-container">
         <div className="home-div">
             <h1>Welcome!</h1>
-            <p>I'm David, a structural engineer and software developer</p>
+            <p>
+                I'm David, a structural engineer and software developer
+            </p>
         </div>
         <div className="home-curved-div">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 420">

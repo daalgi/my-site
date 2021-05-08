@@ -25,8 +25,12 @@
 
 .home-div {
     padding-left: 20%;
+    padding-top: 64px;
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;  
+}
+.home-div p {
+    margin-top: 50px !important;
 }
 
 .home-curved-div {
@@ -70,15 +74,15 @@
 }
 
 .home-underlined-link {
-    border: 2px solid transparent;
-    border-bottom: 2px solid var(--ccontrast1);
+    border: 3px solid transparent;
+    border-bottom: 3px solid var(--ccontrast1);
     transition: 350ms ease-in-out;
     padding: 0 2px;
 }
 .home-underlined-link:hover {
     background: var(--cprimary4);
     border-radius: 6px;
-    border: 2px solid var(--ccontrast2);
+    border: 3px solid var(--ccontrast2);
 }
 
 @media screen and (max-width: 720px) {

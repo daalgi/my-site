@@ -10,9 +10,16 @@ const PostPreviewH1 = ({ node, ...props }) =>
     <h1
         style={{
             fontSize: "1.4em",
+            marginTop: "12px"
         }}
         {...props} />
 
+const PostPreviewP = ({ node, ...props }) =>
+    <p
+        style={{
+            color: "var(--ctext2)"
+        }}
+        {...props}/>
 
 export default ({ posts }) => {
     // console.log(posts)
@@ -21,14 +28,18 @@ export default ({ posts }) => {
         <br />
         {posts && posts.map((post, index) =>
             <div key={index} className="blog-post-preview">
-                <MarkdownPost
+                <Link to={post.path}>
+                    <MarkdownPost
                         file={post.file}
                         postId={post.id}
                         maxCharacters={PREVIEW_NUM_CHAR}
+                        className="blog-post-preview-markdown"
                         components={{
                             h1: PostPreviewH1,
+                            p: PostPreviewP
                         }}
                     />
+                </Link>
                 <Link to={post.path} className="blog-post-read-more">
                     Read more
                 </Link>
