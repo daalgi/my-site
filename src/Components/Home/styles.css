@@ -1,6 +1,6 @@
 .home-container {
     width: 100%;    
-    height: 120vh;
+    height: 100vh;
     background: var(--cprimary3);
     padding-top: 32px;
     margin: -8px auto;
@@ -30,11 +30,24 @@
     flex-direction: column;  
 }
 .home-div p {
-    margin-top: 50px !important;
+    margin-top: 32px !important;
+}
+.home-arrow-icon {
+    position: absolute;
+    left: min(1200px, 78% - 32px);
+    fill: var(--ctext1);
+    width: 64px;
+    height: 64px;
+    padding: 16px;
+    border-radius: 32px;
+}
+.home-arrow-icon:hover {
+    background: var(--cprimary4);
+    fill: var(--ctext);
 }
 
 .home-curved-div {
-    min-height: 550px;
+    min-height: 620px;
     background: linear-gradient(0deg, var(--cprimary5) 0%, var(--cprimary3) 100%);
     /* background-color: var(--cprimary6); */
 }
@@ -45,7 +58,7 @@
 
 .home-curved-inverted-div {
     text-align: center;
-    height: 400px;
+    height: 160px;
     background: linear-gradient(0deg, var(--cprimary3) 0%, var(--cprimary6) 100%);
 }
 .home-curved-inverted-div svg path {

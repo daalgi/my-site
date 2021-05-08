@@ -1,7 +1,9 @@
 import { Link } from 'react-router-dom'
+import { HashLink } from 'react-router-hash-link'
 
 import { ReactComponent as LinkedinIcon } from '../../icons/linkedin.svg'
 import { ReactComponent as GithubIcon } from '../../icons/github.svg'
+import { ReactComponent as ArrowDownIcon } from '../../icons/arrow-down.svg'
 import './styles.css'
 
 
@@ -12,14 +14,15 @@ export default () =>
             <p>
                 I'm David, a structural engineer and software developer
             </p>
+            <HashLink to="/#home-bottom-div">
+                <ArrowDownIcon className="home-arrow-icon" />
+            </HashLink>
         </div>
         <div className="home-curved-div">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 420">
                 <path d="M0,224L48,224C96,224,192,224,288,224C384,224,480,224,576,224C672,224,768,224,864,208C960,192,1056,160,1152,138.7C1248,117,1344,107,1392,101.3L1440,96L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
                 </path>
             </svg>
-
-            {/* <p>You can check some of the projects</p> */}
         </div>
 
         {/* <div className="home-curved-inverted-div">
@@ -28,13 +31,13 @@ export default () =>
                 </path>
             </svg>
         </div> */}
-        <div className="home-div home-bottom-div">
+        <div className="home-div home-bottom-div" id="home-bottom-div">
             <p>I'm passionate about coding, and I do it
             on a daily basis both to automate tasks as a
             structural engineer and to build some side projects.
             </p>
             <p>
-                You can have a look at some of the projects 
+                You can have a look at some of the projects
                 I work in on the <Link
                     className="home-underlined-link"
                     to="/portfolio/">Portfolio section</Link> and
@@ -43,7 +46,7 @@ export default () =>
                     href="https://github.com/daalgi" target="_blank" >
                     Github
                     <GithubIcon className="nav-item-icon" />
-                </a>.
+                </a>
             </p>
             <p>Here's my profile in a couple of coding challenge websites:</p>
             <div className="home-link-div">

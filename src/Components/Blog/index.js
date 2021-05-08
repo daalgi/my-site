@@ -10,14 +10,16 @@ const PostPreviewH1 = ({ node, ...props }) =>
     <h1
         style={{
             fontSize: "1.4em",
-            marginTop: "12px"
+            margin: "16px auto"
         }}
         {...props} />
 
 const PostPreviewP = ({ node, ...props }) =>
     <p
         style={{
-            color: "var(--ctext2)"
+            color: "var(--ctext2)",
+            padding: "0 32px",
+            margin: "4px auto"
         }}
         {...props}/>
 

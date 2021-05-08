@@ -46,6 +46,11 @@
   --cpage: var(--cprimary5);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 body {
   margin: 0;
   color: var(--ctext);
