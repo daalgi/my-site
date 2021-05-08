@@ -63,6 +63,6 @@ The tendons' anchorages were designed by means of steel plates connected to the 
 
 ## Construction process
 
-Lastly, the deck structural safety was verified during the construction process. In order to control the deflections and internal stresses, the preload in the tendons was determined at every step of the assembly of the bridge.
+Lastly, the deck structural safety was verified during the construction process. In order to control the deflections and internal stresses, the needed preload in the tendons was determined at every step of the assembly of the bridge.
 
 ![Construction process](050-cp.gif)
