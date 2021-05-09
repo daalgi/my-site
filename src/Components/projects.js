@@ -48,6 +48,22 @@ const projects = [
         ]
     },
     {
+        title: "Game of Life",
+        description: "Webapp to play around with Conway's game of life (desktop version only)",
+        web: "https://daalgi.github.io/game-of-life/",
+        tags: [
+            "web-app",
+            "game"
+        ],
+        technologies: [
+            "html",
+            "css",
+            "javascript",
+            "react",
+            "canvas"
+        ]
+    },
+    {
         title: "Compounding",
         description: "Calculator to estimate the compounding effect on your investments",
         web: "https://daalgi.github.io/compounding/",
