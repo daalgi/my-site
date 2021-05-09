@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "./static/css/main.2272656d.chunk.css",
-    "main.js": "./static/js/main.1583f42c.chunk.js",
-    "main.js.map": "./static/js/main.1583f42c.chunk.js.map",
+    "main.css": "./static/css/main.8b7aad3d.chunk.css",
+    "main.js": "./static/js/main.749e20f0.chunk.js",
+    "main.js.map": "./static/js/main.749e20f0.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.94ec7441.js",
     "runtime-main.js.map": "./static/js/runtime-main.94ec7441.js.map",
     "static/js/2.ee22e71b.chunk.js": "./static/js/2.ee22e71b.chunk.js",
     "static/js/2.ee22e71b.chunk.js.map": "./static/js/2.ee22e71b.chunk.js.map",
     "index.html": "./index.html",
-    "static/css/main.2272656d.chunk.css.map": "./static/css/main.2272656d.chunk.css.map",
+    "static/css/main.8b7aad3d.chunk.css.map": "./static/css/main.8b7aad3d.chunk.css.map",
     "static/js/2.ee22e71b.chunk.js.LICENSE.txt": "./static/js/2.ee22e71b.chunk.js.LICENSE.txt",
     "static/media/arrow-down.340de114.svg": "./static/media/arrow-down.340de114.svg",
     "static/media/github.e0df113a.svg": "./static/media/github.e0df113a.svg",
@@ -17,7 +17,7 @@
   "entrypoints": [
     "static/js/runtime-main.94ec7441.js",
     "static/js/2.ee22e71b.chunk.js",
-    "static/css/main.2272656d.chunk.css",
-    "static/js/main.1583f42c.chunk.js"
+    "static/css/main.8b7aad3d.chunk.css",
+    "static/js/main.749e20f0.chunk.js"
   ]
 }
