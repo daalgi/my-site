@@ -32,14 +32,17 @@ export default () =>
             </svg>
         </div> */}
         <div className="home-div home-bottom-div" id="home-bottom-div">
-            <p>I'm passionate about coding, and I do code
-            on a daily basis both to automate tasks as a
-            structural engineer in my day job 
-            and to build personal side projects.
+            <p>I'm passionate about coding. I mainly 
+                develop libraries and tools for my day job as a 
+                structural engineer, 
+                and build webapps and APIs for side projects.
+                However, oftentimes I find myself studying algorithms,
+                new technologies, puzzles and all sort of other things
+                with no clear immediate purpose, just for the fun of it.
             </p>
             <p>
                 You can have a look at some of the projects
-                I work on in the <Link
+                I've done in the <Link
                     className="home-underlined-link"
                     to="/portfolio/">Portfolio section</Link> and
                 on <a

@@ -19,6 +19,20 @@ const projects = [
         ]
     },
     {
+        title: "Mi contador",
+        description: "App to register event occurrences (go to the gym, read a book, play guitar, ...) and analyze their time distribution.",
+        web: "https://micontador.web.app/",
+        tags: [
+            "web-app",
+        ],
+        technologies: [
+            "html",
+            "css",
+            "javascript",
+            "react"
+        ]
+    },
+    {
         title: "Sudoku",
         description: "Sudoku game with different difficulty levels and cool highlighting",
         web: "https://daalgi.github.io/react-sudoku/",
