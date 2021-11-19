@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "./static/css/main.8b7aad3d.chunk.css",
-    "main.js": "./static/js/main.c59dda64.chunk.js",
-    "main.js.map": "./static/js/main.c59dda64.chunk.js.map",
+    "main.css": "./static/css/main.d9390c7a.chunk.css",
+    "main.js": "./static/js/main.ebc3b784.chunk.js",
+    "main.js.map": "./static/js/main.ebc3b784.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.94ec7441.js",
     "runtime-main.js.map": "./static/js/runtime-main.94ec7441.js.map",
     "static/js/2.ee22e71b.chunk.js": "./static/js/2.ee22e71b.chunk.js",
     "static/js/2.ee22e71b.chunk.js.map": "./static/js/2.ee22e71b.chunk.js.map",
     "index.html": "./index.html",
-    "static/css/main.8b7aad3d.chunk.css.map": "./static/css/main.8b7aad3d.chunk.css.map",
+    "static/css/main.d9390c7a.chunk.css.map": "./static/css/main.d9390c7a.chunk.css.map",
     "static/js/2.ee22e71b.chunk.js.LICENSE.txt": "./static/js/2.ee22e71b.chunk.js.LICENSE.txt",
-    "static/media/arrow-down.340de114.svg": "./static/media/arrow-down.340de114.svg",
-    "static/media/github.e0df113a.svg": "./static/media/github.e0df113a.svg",
-    "static/media/linkedin.2fa57716.svg": "./static/media/linkedin.2fa57716.svg"
+    "static/media/arrow-down.f6299d68.svg": "./static/media/arrow-down.f6299d68.svg",
+    "static/media/github.9544f549.svg": "./static/media/github.9544f549.svg",
+    "static/media/linkedin.067664dc.svg": "./static/media/linkedin.067664dc.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.94ec7441.js",
     "static/js/2.ee22e71b.chunk.js",
-    "static/css/main.8b7aad3d.chunk.css",
-    "static/js/main.c59dda64.chunk.js"
+    "static/css/main.d9390c7a.chunk.css",
+    "static/js/main.ebc3b784.chunk.js"
   ]
 }
