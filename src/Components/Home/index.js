@@ -12,7 +12,7 @@ export default () =>
         <div className="home-div">
             <h1>Welcome!</h1>
             <p>
-                I'm David, a structural engineer and software developer
+                I'm David, a structural engineer and software developer.
             </p>
             <HashLink to="/#home-bottom-div">
                 <ArrowDownIcon className="home-arrow-icon" />
